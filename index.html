@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Валет пик — демонстрационный макет страницы</title>
+  <meta name="description" content="Визуальный тестовый макет страницы игральной карты «Валет пик». Демонстрация оформления: товар не продаётся, заказ и оплата не подключены.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#1b1714">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <aside class="demo-banner" role="note">
+    <strong>Тестовый макет — товар не продаётся; заказ и оплата не подключены.</strong>
+  </aside>
+
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Валет пик — в начало">
+      <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <rect width="100" height="100" rx="18" fill="#fbf7ef" stroke="#1b1714" stroke-width="6"/>
+        <path d="M50 18 C50 18 26 44 26 62 C26 76 44 78 49 66 C48 78 45 85 38 92 L62 92 C55 85 52 78 51 66 C56 78 74 76 74 62 C74 44 50 18 50 18 Z" fill="#7c1f25"/>
+      </svg>
+      Валет&nbsp;<span>пик</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+      <span>Меню</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="#symbol">Символ</a></li>
+        <li><a href="#idea">Идея</a></li>
+        <li><a href="#back">Рубашка</a></li>
+        <li><a href="#specimen">Демо-карточка</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+      <button class="btn btn-primary" type="button" data-open-demo>Демо-просмотр</button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section id="hero" class="section hero">
+      <div class="wrap hero__grid">
+        <div class="hero__body">
+          <p class="hero__badge">Демонстрационный продукт</p>
+          <p class="eyebrow">Игральная карта · J&#9824;</p>
+          <h1>Валет <span class="accent">пик</span></h1>
+          <p class="hero__lead">
+            Визуальный макет страницы одного предмета. Большая авторская иллюстрация,
+            спокойная типографика и честно обозначенные пустоты вместо выдуманных обещаний.
+          </p>
+          <div class="btn-row">
+            <button class="btn btn-primary btn-lg" type="button" data-open-demo>Открыть демо</button>
+            <a class="btn btn-lg" href="#specimen">Смотреть карту</a>
+          </div>
+        </div>
+        <figure class="hero__card">
+          <img src="assets/img/jack-of-spades.svg" width="500" height="700"
+               alt="Авторская иллюстрация карты «Валет пик»: фигура в короне с посохом и знаком масти пик.">
+          <figcaption class="hero__caption">Авторская иллюстрация · локальный SVG</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. SYMBOL -->
+    <section id="symbol" class="section symbol">
+      <div class="wrap symbol__inner">
+        <p class="symbol__glyph" aria-hidden="true">
+          J<img class="mark" src="assets/img/spade-mark.svg" alt="" width="100" height="120">
+        </p>
+        <div class="symbol__text">
+          <p class="eyebrow">Символ</p>
+          <h2>Одна деталь держит всю страницу</h2>
+          <p>
+            Пика здесь не украшение, а точка опоры. Крупный знак задаёт масштаб и ритм,
+            а весь остальной макет выстраивается вокруг него — от заголовка до подписей.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. IDEA -->
+    <section id="idea" class="section idea">
+      <div class="wrap idea__grid">
+        <div class="idea__aside">
+          <p class="eyebrow">Визуальная идея</p>
+          <h2>Из чего собран образ</h2>
+          <div class="rule" aria-hidden="true"></div>
+        </div>
+        <div class="idea__body">
+          <p class="lead">
+            Мы исходили из простой мысли: карта — это предмет, который хочется рассматривать вблизи.
+          </p>
+          <p>
+            Поэтому в основе — ручная, чуть угловатая геометрия: корона, посох и знак масти
+            на груди. Ничего лишнего, только линии и плоскости, собранные в узнаваемую фигуру.
+          </p>
+          <p>
+            Палитра намеренно узкая: тёплая бумага, чернильная чернота и один приглушённый
+            тёмно-красный акцент. Такой набор держит внимание и не спорит с иллюстрацией.
+          </p>
+          <p>
+            Тексты короткие, потому что на этой странице показывают прежде всего сам предмет,
+            а не рассказ о нём.
+          </p>
+          <figure class="idea__figure">
+            <img src="assets/img/spade-mark.svg" alt="" width="100" height="120" aria-hidden="true">
+            <figcaption>Знак масти как самостоятельный графический элемент композиции.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CARD BACK -->
+    <section id="back" class="section back">
+      <div class="wrap back__grid">
+        <div>
+          <p class="eyebrow">Рубашка</p>
+          <h2>Обратная сторона с собственным узором</h2>
+          <p>
+            Рубашка нарисована с нуля: ромбическая решётка, медальон по центру и четыре малых
+            знака по углам. Узор читается и целиком, и в мелком масштабе, а цвета повторяют
+            палитру лицевой стороны.
+          </p>
+          <p class="back__note">Рисунок — локальный SVG, без внешних файлов и шрифтов.</p>
+        </div>
+        <figure class="back__card">
+          <img src="assets/img/card-back.svg" width="500" height="700"
+               alt="Авторская рубашка карты: ромбическая решётка, центральный медальон с буквой J и знаком пик, четыре малых знака по углам.">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. SPECIMEN -->
+    <section id="specimen" class="section">
+      <div class="wrap">
+        <div class="specimen__head">
+          <p class="eyebrow">Демо-карточка</p>
+          <h2>Параметры товарной карточки</h2>
+          <p class="lead">
+            Честный макет: заполнено только то, что действительно определено в этой демонстрации.
+            Остальное оставлено пустым — без выдуманных цифр и характеристик.
+          </p>
+        </div>
+
+        <div class="specimen__panel">
+          <div class="specimen__top">
+            <strong>Валет пик</strong>
+            <span class="specimen__tag">Демонстрационный макет</span>
+          </div>
+          <dl class="specimen__list">
+            <div class="specimen__row">
+              <dt>Название</dt>
+              <dd>Валет пик (демо)</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Иллюстрация</dt>
+              <dd>Авторская, локальный SVG</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Масть и индекс</dt>
+              <dd>Пики, J</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Формат</dt>
+              <dd class="is-empty">Не указано</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Материал</dt>
+              <dd class="is-empty">Не указано</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Тираж</dt>
+              <dd class="is-empty">Не указан</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Цена</dt>
+              <dd class="is-empty">Не указана</dd>
+            </div>
+            <div class="specimen__row">
+              <dt>Заказ и оплата</dt>
+              <dd>Отключены</dd>
+            </div>
+          </dl>
+          <p class="specimen__foot">
+            Пустые поля — не ошибка, а осознанное решение: страница демонстрационная,
+            поэтому цена, тираж и характеристики изготовления намеренно не заданы.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA -->
+    <section id="cta" class="section cta">
+      <div class="wrap">
+        <p class="eyebrow">Интерактив</p>
+        <h2>Здесь обычно стоит кнопка покупки</h2>
+        <p>
+          Нажмите — откроется диалог с пояснением. Реального оформления заказа и оплаты
+          в этом макете нет; действие только показывает, как выглядел бы интерфейс.
+        </p>
+        <div class="btn-row btn-row--center">
+          <button class="btn btn-primary btn-lg" type="button" data-open-demo>Открыть демо-диалог</button>
+        </div>
+        <p class="cta__fine">Заказ и оплата не подключены. Данные не собираются и не отправляются.</p>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section id="faq" class="section faq">
+      <div class="wrap">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Коротко о макете</h2>
+        <div class="faq__list">
+          <details>
+            <summary>Это настоящий товар?</summary>
+            <p>Нет. Это визуальный тестовый макет страницы. Товар не продаётся.</p>
+          </details>
+          <details>
+            <summary>Можно ли что-то купить?</summary>
+            <p>Нет. Оформление заказа и оплата на странице отключены.</p>
+          </details>
+          <details>
+            <summary>Собираются ли мои данные?</summary>
+            <p>Нет. Здесь нет форм, аналитики, cookies и внешних виджетов, поэтому передавать нечего.</p>
+          </details>
+          <details>
+            <summary>Почему часть полей пустая?</summary>
+            <p>
+              Мы не добавляем выдуманные цену, тираж и характеристики изготовления.
+              Незаданные параметры так и обозначены — как «не указано».
+            </p>
+          </details>
+          <details>
+            <summary>Что использовано под капотом?</summary>
+            <p>
+              Только статический HTML, CSS и немного JavaScript. Все изображения — локальные SVG,
+              внешние шрифты и CDN не подключены.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand-col">
+          <a class="footer__brand" href="#hero" aria-label="Валет пик — в начало">
+            <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect width="100" height="100" rx="18" fill="#fbf7ef" stroke="#1b1714" stroke-width="6"/>
+              <path d="M50 18 C50 18 26 44 26 62 C26 76 44 78 49 66 C48 78 45 85 38 92 L62 92 C55 85 52 78 51 66 C56 78 74 76 74 62 C74 44 50 18 50 18 Z" fill="#7c1f25"/>
+            </svg>
+            Валет&nbsp;пик
+          </a>
+          <p class="footer__notice">
+            Тестовый макет — товар не продаётся; заказ и оплата не подключены.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="#symbol">Символ</a></li>
+            <li><a href="#idea">Идея</a></li>
+            <li><a href="#back">Рубашка</a></li>
+            <li><a href="#specimen">Демо-карточка</a></li>
+            <li><a href="#faq">Вопросы</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Действия</h3>
+          <ul>
+            <li><a href="#cta" data-open-demo>Открыть демо-диалог</a></li>
+            <li><a href="#hero">В начало страницы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>Не является публичной офертой.</span>
+        <span>© 2026 Демонстрационный макет «Валет пик».</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="demo-dialog" class="dialog" aria-labelledby="demo-dialog-title">
+    <div class="dialog__inner">
+      <img class="dialog__mark" src="assets/img/spade-mark.svg" alt="" width="100" height="120" aria-hidden="true">
+      <h2 id="demo-dialog-title">Это демонстрационный макет</h2>
+      <p>
+        Покупка отключена: оформление заказа и оплата не подключены. Здесь показан только
+        внешний вид страницы.
+      </p>
+      <p>Товар не продаётся. Никакие данные не собираются и никуда не отправляются.</p>
+      <form method="dialog">
+        <button class="btn btn-primary" type="submit">Понятно</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" role="img" aria-labelledby="smTitle">
+  <title id="smTitle">Знак масти пик</title>
+  <path d="M50 4 C50 4 12 40 12 70 C12 92 40 95 47 76 C46 96 41 108 30 118 L70 118 C59 108 54 96 53 76 C60 95 88 92 88 70 C88 40 50 4 50 4 Z" fill="#1b1714"/>
+</svg>

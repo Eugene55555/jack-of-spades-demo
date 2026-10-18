@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" role="img" aria-labelledby="jssTitle jssDesc">
+  <title id="jssTitle">Валет пик — авторская иллюстрация карты</title>
+  <desc id="jssDesc">Стилизованная фигура валета в короне держит посох с символом масти пик; в углах — индекс «J» и малый знак пик.</desc>
+
+  <defs>
+    <path id="spade" d="M50 4 C50 4 12 40 12 70 C12 92 40 95 47 76 C46 96 41 108 30 118 L70 118 C59 108 54 96 53 76 C60 95 88 92 88 70 C88 40 50 4 50 4 Z"/>
+    <clipPath id="cardClip">
+      <rect x="3" y="3" width="494" height="694" rx="26"/>
+    </clipPath>
+    <g id="cornerIndex">
+      <text x="24" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#1b1714">J</text>
+      <use href="#spade" transform="translate(26 88) scale(0.26)" fill="#1b1714"/>
+    </g>
+  </defs>
+
+  <!-- card base -->
+  <rect x="3" y="3" width="494" height="694" rx="26" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+  <rect x="20" y="20" width="460" height="660" rx="16" fill="none" stroke="#1b1714" stroke-width="1.2" opacity="0.5"/>
+
+  <g clip-path="url(#cardClip)">
+    <!-- staff (behind figure) -->
+    <rect x="352" y="298" width="16" height="344" rx="8" fill="#fbf7ef" stroke="#1b1714" stroke-width="4"/>
+    <use href="#spade" transform="translate(325 246) scale(0.7)" fill="#1b1714"/>
+
+    <!-- neck (behind head and collar) -->
+    <rect x="232" y="330" width="36" height="40" fill="#fbf7ef" stroke="#1b1714" stroke-width="4"/>
+
+    <!-- robe -->
+    <path d="M150 660 C150 468 190 366 250 366 C310 366 350 468 350 660 Z" fill="#7c1f25" stroke="#1b1714" stroke-width="4"/>
+    <path d="M250 366 L250 660" stroke="#5a151a" stroke-width="3" opacity="0.75"/>
+    <path d="M214 396 C204 470 199 556 199 660" stroke="#5a151a" stroke-width="3" opacity="0.6" fill="none"/>
+    <path d="M286 396 C296 470 301 556 301 660" stroke="#5a151a" stroke-width="3" opacity="0.6" fill="none"/>
+
+    <!-- chest emblem -->
+    <use href="#spade" transform="translate(215 428) scale(0.7)" fill="#fbf7ef"/>
+    <use href="#spade" transform="translate(219 432) scale(0.62)" fill="#1b1714"/>
+
+    <!-- head -->
+    <path d="M250 226 C285 226 306 252 306 288 C306 320 282 344 250 344 C218 344 194 320 194 288 C194 252 215 226 250 226 Z" fill="#fbf7ef" stroke="#1b1714" stroke-width="4"/>
+
+    <!-- hair -->
+    <path d="M194 284 C189 250 214 220 250 220 C286 220 311 250 306 284 C300 262 290 254 278 254 C272 239 262 235 250 235 C238 235 228 239 222 254 C210 254 200 262 194 284 Z" fill="#1b1714"/>
+
+    <!-- face -->
+    <path d="M250 288 L250 310 L240 316" stroke="#1b1714" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M214 272 C222 265 238 265 245 272" stroke="#1b1714" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M255 272 C262 265 278 265 286 272" stroke="#1b1714" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <ellipse cx="229" cy="289" rx="5" ry="7" fill="#1b1714"/>
+    <ellipse cx="271" cy="289" rx="5" ry="7" fill="#1b1714"/>
+    <path d="M230 330 C240 323 260 323 270 330" stroke="#1b1714" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+    <!-- collar -->
+    <path d="M250 372 L212 342 L228 384 Z" fill="#1b1714"/>
+    <path d="M250 372 L288 342 L272 384 Z" fill="#1b1714"/>
+
+    <!-- crown -->
+    <path d="M176 214 L176 190 L188 150 L216 186 L250 118 L284 186 L312 150 L324 190 L324 214 Z" fill="#7c1f25" stroke="#1b1714" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="174" y="200" width="152" height="16" fill="#5a151a" stroke="#1b1714" stroke-width="3"/>
+    <circle cx="188" cy="150" r="6" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+    <circle cx="250" cy="118" r="6" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+    <circle cx="312" cy="150" r="6" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+
+    <!-- hand holding staff -->
+    <ellipse cx="360" cy="392" rx="30" ry="26" fill="#fbf7ef" stroke="#1b1714" stroke-width="4"/>
+  </g>
+
+  <!-- corner indices -->
+  <use href="#cornerIndex"/>
+  <use href="#cornerIndex" transform="rotate(180 250 350)"/>
+</svg>

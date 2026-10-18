@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" role="img" aria-labelledby="cbTitle cbDesc">
+  <title id="cbTitle">Рубашка карты — авторский узор</title>
+  <desc id="cbDesc">Ромбическая решётка с медальоном в центре и четырьмя малыми знаками пик по углам.</desc>
+
+  <defs>
+    <path id="spadeBack" d="M50 4 C50 4 12 40 12 70 C12 92 40 95 47 76 C46 96 41 108 30 118 L70 118 C59 108 54 96 53 76 C60 95 88 92 88 70 C88 40 50 4 50 4 Z"/>
+    <pattern id="lattice" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="46" height="46" fill="#efe3d0"/>
+      <path d="M0 23 H46 M23 0 V46" stroke="#1b1714" stroke-width="1" opacity="0.32"/>
+      <circle cx="23" cy="23" r="2.4" fill="#7c1f25" opacity="0.75"/>
+      <circle cx="0" cy="0" r="2.4" fill="#7c1f25" opacity="0.75"/>
+    </pattern>
+  </defs>
+
+  <rect x="3" y="3" width="494" height="694" rx="26" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+  <rect x="16" y="16" width="468" height="668" rx="18" fill="url(#lattice)" stroke="#1b1714" stroke-width="2"/>
+
+  <!-- corner spades -->
+  <use href="#spadeBack" transform="translate(40 52) scale(0.34)" fill="#7c1f25"/>
+  <use href="#spadeBack" transform="translate(346 52) scale(0.34)" fill="#7c1f25"/>
+  <use href="#spadeBack" transform="translate(40 566) scale(0.34)" fill="#7c1f25"/>
+  <use href="#spadeBack" transform="translate(346 566) scale(0.34)" fill="#7c1f25"/>
+
+  <!-- central medallion -->
+  <ellipse cx="250" cy="350" rx="132" ry="172" fill="#fbf7ef" stroke="#1b1714" stroke-width="3"/>
+  <ellipse cx="250" cy="350" rx="118" ry="158" fill="none" stroke="#7c1f25" stroke-width="2"/>
+
+  <text x="250" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="700" fill="#1b1714">J</text>
+  <use href="#spadeBack" transform="translate(215 372) scale(0.7)" fill="#1b1714"/>
+</svg>
