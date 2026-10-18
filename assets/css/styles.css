@@ -160,6 +160,8 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+  min-height: 44px;
+  min-width: 44px;
   font-family: var(--serif);
   font-size: 1.16rem;
   font-weight: 700;
@@ -186,6 +188,10 @@ p {
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
   color: var(--ink);
   text-decoration: none;
   font-size: 0.93rem;
@@ -338,7 +344,7 @@ p {
   border: 1px solid var(--line-strong);
   padding: 0.35rem 0.75rem;
   margin-bottom: 1rem;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 700;
@@ -515,7 +521,7 @@ p {
 }
 
 .specimen__tag {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 700;
@@ -688,6 +694,8 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+  min-height: 44px;
+  min-width: 44px;
   font-family: var(--serif);
   font-size: 1.2rem;
   font-weight: 700;
@@ -724,6 +732,20 @@ p {
   display: grid;
   gap: 0.55rem;
   font-size: 0.94rem;
+}
+
+.footer__col a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
+  color: rgba(251, 247, 239, 0.9);
+  text-decoration: none;
+}
+
+.footer__col a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer__legal {
