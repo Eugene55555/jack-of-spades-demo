@@ -412,6 +412,10 @@ p {
   color: var(--paper-3);
 }
 
+.symbol .eyebrow {
+  color: #f0c9a0;
+}
+
 .symbol p {
   color: rgba(251, 247, 239, 0.82);
   max-width: 46ch;
@@ -769,6 +773,10 @@ p {
   background: var(--paper-3);
   color: var(--ink);
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5);
+}
+
+.dialog:not([open]) {
+  display: none;
 }
 
 .dialog::backdrop {

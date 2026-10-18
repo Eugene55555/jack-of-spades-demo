@@ -38,9 +38,12 @@
     if (!dialog) return;
     if (typeof dialog.showModal === "function") {
       if (!dialog.open) dialog.showModal();
-    } else {
-      dialog.setAttribute("open", "");
+      return;
     }
+    window.alert(
+      "Это демонстрационный макет. Покупка отключена: оформление заказа " +
+        "и оплата не подключены, товар не продаётся. Данные не собираются."
+    );
   }
 
   Array.prototype.forEach.call(openers, function (button) {
